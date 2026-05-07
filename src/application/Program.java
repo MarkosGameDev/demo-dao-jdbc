@@ -36,7 +36,10 @@ public class Program {
 			System.out.println(obj);
 		}
 		
-		
+		System.out.println("\n=== TEST 5: seller update ===");
+		seller = sellerDao.findById(8);
+		seller.setName("Marth SkyBlue");
+		sellerDao.update(seller);
 	}
 
 }
